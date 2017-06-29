@@ -15,11 +15,4 @@ This project is trying to implement the algorithm from the paper “A neural alg
 3.  Then we have content and style representation, we can iteratively operate a noise image to optimize it so that its content is similar to the original content image and its style is similar to the original style image.
 
 ### Keras Implementation
-  In order to implement this algorithm, we need to do :
-#### 1.  A trained neural network
-    Based the research I did and the suggestion provided by the paper, I used VGG16 neural network to pretrain image. The VGG16 neural network has 13 layers CNN and 5 layers pool. In Keras 1.0 version it already has this network in Keras.Application model.
-#### 2.  A white noise image for generating target image
-    Use methods from numpy library to generate a noise image
-#### 3.  Feature correlations and Loss functions (content loss, style loss, total loss)
-    According to the paper, the content loss function is defined as:
-    
+ In order to implement this algorithm, we need to do :
